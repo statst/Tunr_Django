@@ -25,4 +25,5 @@ urlpatterns = [
     path('', include('tunr.urls')),
     path('', include('accounts.urls')),
     url(r'^oauth/', include('social_django.urls', namespace='social')),
+    path('api-auth', include('rest_framework.urls', namespace='rest_framework'))
 ]
